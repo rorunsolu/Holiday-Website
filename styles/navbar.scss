@@ -1,0 +1,219 @@
+@import "./style.scss";
+
+nav {
+    /*Layout*/
+    display: grid;
+    place-items: center;
+
+    /*Dimensions*/
+    height: 5rem;
+    width: 100vw;
+
+    /*Positioning*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    /*Box Model*/
+    border-bottom: 0.1rem solid $color-white;
+
+    /*Color*/
+    background-color: rgba(17, 25, 40);
+}
+
+.navbar {
+    /*Layout*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*Dimensions*/
+    height: 100%;
+
+    &__logo {
+        /*Dimensions*/
+        //!width: 7.5rem;
+
+        /*font*/
+        font-size: 1.25rem;
+        font-weight: 500;
+
+        /*color*/
+        color: hsl(0, 0%, 100%);
+    }
+    &__links {
+        /*Layout*/
+        display: flex;
+        gap: 4rem;
+
+        color: $color-white;
+
+        @media (width < 1024px) {
+            /*Layout*/
+            display: none;
+            flex-direction: column;
+            gap: 0;
+
+            /*Positioning*/
+            position: absolute;
+            top: 100%;
+            right: 0;
+
+            /*Other*/
+            perspective: 400px;
+
+            /*Color*/
+            //!background-color: rgba(17, 25, 40.75);
+        }
+    }
+    &__links > li {
+        @media (width < 1024px) {
+            /*Dimensions*/
+            height: 5rem;
+
+            /*Box Model*/
+            //!box-shadow: -3rem 3rem 3rem rgba(0, 0, 0, 0.7);
+
+            /*Animation*/
+            opacity: 0;
+            animation: navbarAnimation 600ms ease forwards;
+            transform: rotateX(90deg);
+            transform-origin: top;
+
+            &:nth-child(2) {
+                animation-delay: 200ms;
+            }
+            &:nth-child(3) {
+                animation-delay: 400ms;
+            }
+            &:nth-child(4) {
+                animation-delay: 600ms;
+            }
+            &:nth-child(5) {
+                animation-delay: 800ms;
+            }
+
+            @keyframes navbarAnimation {
+                to {
+                    opacity: 1;
+
+                    transform: rotateX(0);
+                    transition: $transition;
+                }
+            }
+        }
+    }
+
+    &__links > li > a {
+        /*Color*/
+        color: $color-white;
+
+        &:hover {
+            /*Animation*/
+            transition: $transition;
+
+            /*Box Model*/
+            //!box-shadow: 0 2px 5px rgba(207, 17, 17, 0.3);
+            border-bottom: 0.1rem solid $color-white-dark;
+
+            /*Color*/
+            //!color: $color-red-orange;
+        }
+
+        @media (width < 1024px) {
+            /*Layout*/
+            display: flex;
+            align-items: center;
+
+            /*Dimensions*/
+            height: 100%;
+            width: 100%;
+            //width: 13rem;
+
+            /*Box Model*/
+            //!padding-top: 1rem;
+            //!padding-bottom: 1rem;
+            //!padding-left: 3rem;
+            //!padding-right: 5rem;
+            padding: 1rem 5rem 1rem 3rem;
+            border-top: 0.1rem solid $color-white;
+            //!border: 1px solid $color-white;
+
+            /*Color*/
+            //!background: $color-white;
+            //!color: $color-white;
+
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(17, 25, 40, 0.75);
+
+            &:hover {
+                /*Box Model*/
+                outline: 0.1rem solid $color-white;
+            }
+        }
+    }
+
+    &__socials {
+        /*Layout*/
+        display: flex;
+        gap: 1rem;
+
+        @media (width < 1024px) {
+            /*Layout*/
+            display: none;
+        }
+    }
+
+    &__socials > li > a {
+        /*Layout*/
+        place-items: center;
+
+        /*Dimensions*/
+        width: 2rem;
+        height: 2rem;
+
+        /*Color*/
+        color: $color-white;
+
+        &:hover {
+            /*Box Model*/
+            //!box-shadow: 0 2px 5px rgba(207, 17, 17, 0.3);
+            border-bottom: 0.1rem solid $color-white-dark;
+            //!border-radius: 0.25rem;
+
+            /*Animation*/
+            transition: $transition;
+        }
+    }
+
+    &__toggle-button {
+        /*Layout*/
+        display: none;
+
+        @media (width < 1024px) {
+            /*Layout*/
+            display: inline-block;
+
+            /*Background*/
+            background: transparent;
+
+            /*Font*/
+            font-size: 2rem;
+
+            /*Color*/
+            color: $color-white;
+
+            /*Other*/
+            cursor: pointer;
+        }
+    }
+}
+
+#navbar__toggle-close {
+    @media (width < 1024px) {
+        /*Layout*/
+        display: none;
+    }
+}

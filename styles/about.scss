@@ -1,0 +1,162 @@
+@import "./style.scss";
+
+#about {
+    /*Box Model*/
+    margin-top: 10rem;
+
+    /*Background*/
+    background-position:
+        0 0,
+        50% 100%;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: center;
+
+    /*Color*/
+
+    @media (width < 600px) {
+        /*Box Model*/
+        margin-top: 4rem;
+    }
+}
+
+.about {
+    /*Layout*/
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    /*Box Model*/
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    /*Color*/
+    color: $color-black;
+
+    // Overview
+
+    &__overview {
+        /*Layout*/
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__title {
+        /*Layout*/
+        text-align: center;
+
+        /*Font*/
+        //!font-size: 3rem;
+        font-weight: 600;
+
+        /*Color*/
+        color: hsl(0, 0%, 13%);
+    }
+
+    &__description {
+        /*Layout*/
+        text-align: center;
+
+        /*Color*/
+        color: hsl(0, 0%, 29%);
+    }
+
+    // Information
+
+    &__information {
+        /*Layout*/
+        display: grid;
+        grid-template-columns: repeat(4, minmax(15rem, 1fr));
+        place-items: center;
+        gap: 2rem;
+
+        /*Box Model*/
+        padding: 1rem;
+
+        /*Color*/
+        color: $color-white;
+
+        @media (width < 1300px) {
+            /*Layout*/
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (width < 850px) {
+            /*Layout*/
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (width < 600px) {
+            /*Layout*/
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__perk {
+        /*Layout*/
+        display: grid;
+        place-items: center;
+        gap: 0.5rem;
+
+        /*Box Model*/
+        border: 0.25rem solid $color-white;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        /*Color*/
+        color: $color-black;
+
+        &:hover {
+            /*Box Model*/
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+            /*Animation*/
+            transition: $transition;
+        }
+    }
+    &__icon-wrapper {
+        /*Layout*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__perk-icon {
+        /*Layout*/
+        overflow: hidden;
+        text-align: center;
+
+        /*Box Model*/
+        //!border: 0.1rem solid $color-black;
+        //!border-radius: 100%;
+        padding: 0.5rem;
+
+        /*Font*/
+        line-height: 3.5rem;
+        font-size: 3.5rem;
+
+        /*Color*/
+        color: hsl(0, 0%, 13%);
+    }
+    &__perk-name {
+        /*Box Model*/
+        //!border-bottom: 0.1rem solid $color-black;
+
+        /*Color*/
+        color: hsl(0, 0%, 13%);
+
+        /*Font*/
+        font-weight: 600;
+    }
+    &__perk-description {
+        /*Layout*/
+        text-align: center;
+
+        /*Color*/
+        color: hsl(0, 0%, 29%);
+
+        /*Font*/
+        font-weight: 400;
+    }
+}
