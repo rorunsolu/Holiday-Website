@@ -20,20 +20,49 @@ $color-white-dark: #cccccc;
 
 $color-black: #000000;
 
-$container-width-lg: 88%;
-$container-width-md: 92%;
+$transition: all 300ms ease;
 
-$transition: all 400ms ease;
+:root {
+    --color-grey-blue: #2c2d34;
+    --color-grey-blue-light: #3b3c44;
+    --color-grey-blue-dark: #1e1f24;
 
-.window-scrolled {
-    /*Box Model*/
-    border-bottom: 0.2rem solid $color-white;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    --color-grey: #e9e9e9;
+    --color-grey-dark: #7d7d7d;
 
-    /*Color*/
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
+    --color-red-orange: #e94822;
+    --color-red-orange-light: #f06a46;
+    --color-red-orange-dark: #c63c1d;
+
+    --color-orange: #f2910a;
+    --color-orange-light: #f5a33c;
+    --color-orange-dark: #d37e08;
+
+    --color-yellow: #efd510;
+    --color-yellow-light: #f2dc42;
+    --color-yellow-dark: #d6ba0e;
+
+    --color-white: #ffffff;
+    --color-white-light: #f2f2f2;
+    --color-white-dark: #cccccc;
+
+    --color-black: #000000;
+    --color-green: #9fce27;
+
+    --margin-bottom: 1rem;
+    //--border-cyan: 1px solid var(--bg-cyan);
+    --border: 1px solid var(--color-green);
+    --border-radius: 2rem;
+    --padding: 1rem;
+    --gap-card-wrapper: 1.5rem;
+    --gap-card-wrapper-medium: 3rem;
+    --gap-card-wrapper-large: 4.5rem;
+
+    --color-white: #fff;
+    --color-black: #000;
+    --box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.3);
+
+    --transition: all 0.3s ease-in-out;
 }
 
 * {
@@ -51,10 +80,41 @@ html {
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Basic", sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.6;
+
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+section {
+    padding: 10rem 0;
+
+    @media (width < 600px) {
+        padding: 5rem 0;
+    }
 }
 
 img {
@@ -64,47 +124,6 @@ img {
     width: 100%;
 }
 
-.container {
-    width: $container-width-lg;
-
-    margin: 0 auto;
-    max-width: 75rem;
-
-    @media (width < 1024px) {
-        width: $container-width-md;
-
-        position: relative;
-    }
-}
-
-h1 {
-    font-size: 4rem;
-    font-size: clamp(2.5rem, 1.40988rem + 4.59vw, 5.5rem);
-    font-weight: 400;
-    line-height: 1.1;
-
-    @media (width < 1024px) {
-        font-size: 2.5rem;
-        line-height: 1.3;
-    }
-
-    @media (width < 600px) {
-        font-size: 2rem;
-        line-height: 1.3;
-    }
-}
-
-h2 {
-    font-size: 3.5rem;
-    line-height: 1.1;
-    font-weight: 400;
-
-    @media (width < 1024px) {
-        font-size: 2.5rem;
-    }
-
-    @media (width < 600px) {
-        font-size: 2rem;
-        line-height: 1.3;
-    }
+a {
+    transition: var(--transition);
 }

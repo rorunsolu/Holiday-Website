@@ -3,52 +3,60 @@
 <html lang="en">
 
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
-    <!--boxicons-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!--remixicon-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <!--modern-normalize-->
+    <title>Holiday Booking Website</title>
+
+    <meta name="description"
+          content="Plan and book your dream holiday with our easy-to-use booking platform. Find the best travel deals, accommodations, and packages for your next getaway.">
+
+    <!-- Favicon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Modern Normalize -->
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
-/modern-normalize.min.css" rel="stylesheet">
-    <!--google fonts-->
+            /modern-normalize.min.css" rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
 
-    <title>Holday Website</title>
+    <!-- Custom SCSS Imports -->
+    <script type="module" src="/scripts/main.js"></script>
 
   </head>
 
   <body>
 
     <nav>
-      <div class="container navbar">
+      <div class="nav-container nav">
 
-        <a href="#" class="navbar__logo">Holidays 4 You</a>
+        <a class="nav__logo" href="#">Logo</a>
 
-        <ul class="navbar__links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#locations">Locations</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#browse">Games</a></li>
+          <li class="nav__item"><a class="nav__link" href="#updates">News</a></li>
+          <li class="nav__item"><a class="nav__link" href="#reason">About Us</a></li>
         </ul>
 
-        <ul class="navbar__socials">
-          <li><a href="https://www.instagram.com" title="Instagram" aria-label="Instagram"><i class="ri-instagram-line"
-                aria-hidden="true"></i></a></li>
-          <li><a href="https://x.com/?lang=en" title="Twitter" aria-label="Twitter"><i class="ri-twitter-line"></i></a>
-          </li>
-          <li><a href="https://en-gb.facebook.com/" title="Facebook" aria-label="Facebook"><i
-                class="ri-facebook-circle-line"></i></a></li>
-        </ul>
+        <a class="button" href="#" target="_blank">Contact Us</a>
 
-        <button class="navbar__toggle-button" id="navbar__toggle-open" type="button"><i class="ri-menu-line"></i>
+        <button class="nav__toggle-button" id="nav__toggle-open" type="button"><i class="ri-menu-line"></i>
         </button>
-        <button class="navbar__toggle-button" id="navbar__toggle-close" type="button"><i class="ri-close-line"></i>
+        <button class="nav__toggle-button" id="nav__toggle-close" type="button"><i class="ri-close-line"></i>
         </button>
 
       </div>
@@ -58,10 +66,9 @@
 
       <div class="container header">
 
-        <div class="header__text">
-          <h1 class="header__title">Find The Perfect Holiday <br> For You</h1>
-        </div>
-        
+        <h1 class="header__title">Explore the Best Destinations for Your Next Adventure</h1>
+        <a class="button">Book Now</a>
+
       </div>
 
     </header>
@@ -71,56 +78,50 @@
       <section id="locations">
         <div class="container locations">
 
-          <h2 class="locations__title">Locations</h2>
+          <h2 class="locations__title">Curated Locations Just for You</h2>
 
           <div class="locations__wrapper">
 
             <article class="locations__card">
-              <img class="locations__image" src="./images/mountain-camping.jpg" alt="Mountain Camping">
-              <h2 class="locations__name">Lorem Ipsum</h2>
+              <h3 class="locations__name">Lorem Ipsum</h3>
               <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
               </p>
-              <a class="locations__button" href="#">More Info</a>
+              <a class="button-secondary" href="#">More Info</a>
             </article>
 
             <article class="locations__card">
-              <img class="locations__image" src="./images/coast.jpg" alt="Coast">
-              <h2 class="locations__name">Lorem Ipsum</h2>
+              <h3 class="locations__name">Lorem Ipsum</h3>
               <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
               </p>
-              <a class="locations__button" href="#">More Info</a>
+              <a class="button-secondary" href="#">More Info</a>
             </article>
 
             <article class="locations__card">
-              <img class="locations__image" src="./images/beach.jpg" alt="Beach">
-              <h2 class="locations__name">Lorem Ipsum</h2>
+              <h3 class="locations__name">Lorem Ipsum</h3>
               <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
               </p>
-              <a class="locations__button" href="#">More Info</a>
+              <a class="button-secondary" href="#">More Info</a>
             </article>
 
             <article class="locations__card">
-              <img class="locations__image" src="./images/seas-bridge.jpg" alt="Sea Bridge">
-              <h2 class="locations__name">Lorem Ipsum</h2>
+              <h3 class="locations__name">Lorem Ipsum</h3>
               <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
               </p>
-              <a class="locations__button" href="#">More Info</a>
+              <a class="button-secondary" href="#">More Info</a>
             </article>
 
             <article class="locations__card">
-              <img class="locations__image" src="./images/balcony-pool.jpg" alt="Balcony Pool">
-              <h2 class="locations__name">Lorem Ipsum</h2>
+              <h3 class="locations__name">Lorem Ipsum</h3>
               <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
               </p>
-              <a class="locations__button" href="#">More Info</a>
+              <a class="button-secondary" href="#">More Info</a>
             </article>
 
             <article class="locations__card">
-              <img class="locations__image" src="./images/mountain-river.jpg" alt="Mountain River">
-              <h2 class="locations__name">Lorem Ipsum</h2>
+              <h3 class="locations__name">Lorem Ipsum</h3>
               <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
               </p>
-              <a class="locations__button" href="#">More Info</a>
+              <a class="button-secondary" href="#">More Info</a>
             </article>
 
           </div>
@@ -145,35 +146,36 @@
               <div class="about__icon-wrapper">
                 <div class="about__perk-icon"><i class="ri-flight-takeoff-line"></i></div>
               </div>
-              <span class="about__perk-name">Instant Booking</span>
-              <span class="about__perk-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-                dolorum.</span>
+              <h3 class="about__perk-name">Instant Booking</h3>
+              <p class="about__perk-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                dolorum.</p>
             </article>
 
             <article class="about__perk">
               <div class="about__icon-wrapper">
                 <div class="about__perk-icon"><i class="ri-user-location-line"></i></div>
               </div>
-              <span class="about__perk-name">Professional Guides</span>
-              <span class="about__perk-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-                dolorum</span>
+              <h3 class="about__perk-name">Professional Guides</h3>
+              <p class="about__perk-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                dolorum</p>
             </article>
 
             <article class="about__perk">
               <div class="about__icon-wrapper">
                 <div class="about__perk-icon"><i class='bx bx-money-withdraw'></i></div>
               </div>
-              <span class="about__perk-name">Inexpensive Prices</span>
-              <span class="about__perk-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-                dolorum</span>
+              <h3 class="about__perk-name">Inexpensive Prices</h3>
+              <p class="about__perk-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                dolorum</p>
             </article>
 
             <article class="about__perk">
               <div class="about__icon-wrapper">
                 <div class="about__perk-icon"><i class='bx bx-support'></i></div>
-              </div> <span class="about__perk-name">24/7 Support</span>
-              <span class="about__perk-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-                dolorum</span>
+              </div>
+              <h3 class="about__perk-name">24/7 Support</h3>
+              <p class="about__perk-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                dolorum</p>
             </article>
 
           </div>
@@ -192,62 +194,64 @@
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Jet Skiing.jpg" alt="Jet Skiing">
-              <h2 class="activities__name">Jet Skiing</h2>
+              <h3 class="activities__name">Jet Skiing</h3>
               <span class="activities__price">£50 per session</span>
-              <a class="activities__button">More Info</a>
+              <a class="button">More Info</a>
             </article>
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Mountain Biking.jpg" alt="Mountain Biking">
-              <h2 class="activities__name">Mountain Biking</h2>
+              <h3 class="activities__name">Mountain Biking</h3>
               <span class="activities__price">£30 per session</span>
-              <a class="activities__button">More Info</a>
+              <a class="button">More Info</a>
             </article>
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Snorkeling.jpg" alt="Snorkeling">
-              <h2 class="activities__name">Snorkeling</h2>
+              <h3 class="activities__name">Snorkeling</h3>
               <span class="activities__price">£20 per session</span>
-              <a class="activities__button">More Info</a>
+              <a class="button">More Info</a>
             </article>
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Hiking.jpg" alt="Hiking">
-              <h2 class="activities__name">Hiking</h2>
+              <h3 class="activities__name">Hiking</h3>
               <span class="activities__price">£15 per session</span>
-              <a class="activities__button">More Info</a>
+              <a class="button">More Info</a>
             </article>
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Scuba Diving.jpg" alt="Scuba Diving">
-              <h2 class="activities__name">Scuba Diving</h2>
+              <h3 class="activities__name">Scuba Diving</h3>
               <span class="activities__price">£100 per session</span>
-              <a class="activities__button">More Info</a>
+              <a class="button">More Info</a>
             </article>
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Rock Climbing.jpg" alt="Rock Climbing">
-              <h2 class="activities__name">Rock Climbing</h2>
+              <h3 class="activities__name">Rock Climbing</h3>
               <span class="activities__price">£40 per session</span>
-              <a class="activities__button">More Info</a>
+              <a class="button">More Info</a>
             </article>
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Kayaking.jpg" alt="Kayaking">
-              <h2 class="activities__name">Kayaking</h2>
+              <h3 class="activities__name">Kayaking</h3>
               <span class="activities__price">£25 per session</span>
-              <a class="activities__button">More Info</a>
+              <a class="button">More Info</a>
             </article>
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Safari.jpg" alt="Safari">
-              <h2 class="activities__name">Safari</h2>
+              <h3 class="activities__name">Safari</h3>
               <span class="activities__price">£150 per session</span>
-              <a class="activities__button">More Info</a>
+              <a class="button">More Info</a>
             </article>
 
 
+
           </div>
+
         </div>
 
       </section>
@@ -340,7 +344,69 @@
       </div>
     </footer>
 
-    <script type="module" src="./main.js"></script>
+    <script>
+
+      window.addEventListener('scroll',
+        function () {
+          document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
+        });
+
+      const nav = document.querySelector('.nav__list');
+      const openNavButton = document.querySelector('#nav__toggle-open');
+      const closeNavButton = document.querySelector('#nav__toggle-close');
+
+      const openNav = function () {
+        if (nav.style.display === 'none') {
+          nav.style.display = 'flex';
+          openNavButton.style.display = 'none';
+          closeNavButton.style.display = 'inline-block';
+        }
+
+        else {
+          nav.style.display = 'none';
+          openNavButton.style.display = 'inline-block';
+          closeNavButton.style.display = 'none';
+        }
+      };
+
+      openNavButton.addEventListener('click', openNav);
+
+      const closeNav = function () {
+
+        nav.style.display = 'none';
+
+        openNavButton.style.display = 'inline-block';
+
+        closeNavButton.style.display = 'none';
+      };
+
+      closeNavButton.addEventListener('click', closeNav);
+
+      if (document.body.clientWidth < 1000) {
+        nav.querySelectorAll('li a').forEach(navLink => {
+          navLink.addEventListener('click', closeNav);
+        });
+      }
+
+      const accordionHeader = document.querySelectorAll(".accordion__header");
+
+      accordionHeader.forEach(accordionHeader => {
+        accordionHeader.addEventListener("click", event => {
+          accordionHeader.classList.toggle("active");
+          const accordionBody = accordionHeader.nextElementSibling;
+
+          if (accordionHeader.classList.contains("active")) {
+            accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
+          }
+
+          else {
+            accordionBody.style.maxHeight = 0;
+          }
+
+        });
+      });
+
+    </script>
 
   </body>
 
