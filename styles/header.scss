@@ -1,25 +1,5 @@
 header {
-    //margin-top: 5rem;
-    padding: 5rem 0;
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    //height: 100vh;
-
-    border-radius: var(--border-radius);
-    padding: 10rem 5rem;
-
-    color: var(--color-white);
-
     position: relative;
-
-    @media (width < 600px) {
-        padding: 5rem 2rem;
-    }
 
     &::before {
         content: "";
@@ -32,24 +12,27 @@ header {
         width: 100%;
         height: 100%;
 
-        border-radius: var(--border-radius);
-
-        background-image: url("../images/hero-bg-2.jpg");
+        background-image: url("../images/header-holiday-bg.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-clip: content-box;
 
-        //background-color: black;
-
-        overflow: hidden;
-
-        filter: brightness(0.8);
+        filter: brightness(0.6);
     }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 100vh;
+
+    color: var(--color-white);
 
     &__title {
-        width: 70%;
-
         margin-bottom: 2rem;
     }
 }

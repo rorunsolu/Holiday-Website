@@ -12,8 +12,8 @@
           content="Plan and book your dream holiday with our easy-to-use booking platform. Find the best travel deals, accommodations, and packages for your next getaway.">
 
     <!-- Favicon -->
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Modern Normalize -->
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0
@@ -43,7 +43,7 @@
     <nav>
       <div class="nav-container nav">
 
-        <a class="nav__logo" href="#">Logo</a>
+        <a class="logo" href="#">Logo</a>
 
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
@@ -66,7 +66,7 @@
 
       <div class="container header">
 
-        <h1 class="header__title">Explore the Best Destinations for Your Next Adventure</h1>
+        <h1 class="header__title">Explore the <span>Best Destinations</span> for Your Next Adventure</h1>
         <a class="button">Book Now</a>
 
       </div>
@@ -78,50 +78,75 @@
       <section id="locations">
         <div class="container locations">
 
-          <h2 class="locations__title">Curated Locations Just for You</h2>
+          <h2 class="locations__title">Curated Locations <span>Just for You</span></h2>
 
           <div class="locations__wrapper">
 
             <article class="locations__card">
-              <h3 class="locations__name">Lorem Ipsum</h3>
-              <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
+              <img class="locations__image" src="images/paris-img.jpg"
+                   alt="A view of Paris, France, featuring iconic landmarks">
+              <h3 class="locations__name">Paris, France</h3>
+              <p class="locations__description">Paris, the capital of France, is known for its art, culture, and . . .
               </p>
-              <a class="button-secondary" href="#">More Info</a>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="locations__card">
-              <h3 class="locations__name">Lorem Ipsum</h3>
-              <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
+              <img class="locations__image" src="images/tokyo-img.jpg" alt="A bustling street view of Tokyo, Japan">
+              <h3 class="locations__name">Tokyo, Japan</h3>
+              <p class="locations__description">Tokyo, the bustling capital of Japan, offers a mix of traditional . . .
               </p>
-              <a class="button-secondary" href="#">More Info</a>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="locations__card">
-              <h3 class="locations__name">Lorem Ipsum</h3>
-              <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
-              </p>
-              <a class="button-secondary" href="#">More Info</a>
+              <img class="locations__image" src="images/newyork-img.jpg" alt="A skyline view of New York City, USA">
+              <h3 class="locations__name">New York City, USA</h3>
+              <p class="locations__description">New York City is known for its vibrant culture, landmarks like. . .</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="locations__card">
-              <h3 class="locations__name">Lorem Ipsum</h3>
-              <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
-              </p>
-              <a class="button-secondary" href="#">More Info</a>
+              <img class="locations__image" src="images/sydney-img.jpg"
+                   alt="A view of Sydney, Australia, with the Opera House">
+              <h3 class="locations__name">Sydney, Australia</h3>
+              <p class="locations__description">Sydney is famous for its stunning harbour, the Opera House . . .</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="locations__card">
-              <h3 class="locations__name">Lorem Ipsum</h3>
-              <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
-              </p>
-              <a class="button-secondary" href="#">More Info</a>
+              <img class="locations__image" src="images/cape-town-img.jpg"
+                   alt="A scenic view of Cape Town, South Africa, with Table Mountain">
+              <h3 class="locations__name">Cape Town, South Africa</h3>
+              <p class="locations__description">Cape Town is known for its natural beauty, including Table Mountain . .
+                .</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="locations__card">
-              <h3 class="locations__name">Lorem Ipsum</h3>
-              <p class="locations__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, ratione.
-              </p>
-              <a class="button-secondary" href="#">More Info</a>
+              <img class="locations__image" src="images/rio-img.jpg"
+                   alt="A view of Rio de Janeiro, Brazil, featuring beaches and Carnival">
+              <h3 class="locations__name">Rio de Janeiro, Brazil</h3>
+              <p class="locations__description">Rio de Janeiro is famous for its beaches, Carnival festival . . .</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
           </div>
@@ -134,7 +159,7 @@
         <div class="container about">
 
           <div class="about__overview">
-            <h2 class="about__title">Why You Should Choose Us</h2>
+            <h2 class="about__title">Why <span>You Should</span> Choose Us</h2>
             <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dolorum a
               perferendis ipsam saepe consequuntur repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
@@ -188,66 +213,50 @@
 
         <div class="container activities">
 
-          <h2 class="activities__title">Activities</h2>
+          <h2 class="activities__title">Thrilling Activities to Make <span>Your Holiday</span> Unforgettable</h2>
 
           <div class="activities__wrapper">
 
             <article class="activities__card">
-              <img class="activities__image" src="./images/Jet Skiing.jpg" alt="Jet Skiing">
-              <h3 class="activities__name">Jet Skiing</h3>
-              <span class="activities__price">£50 per session</span>
-              <a class="button">More Info</a>
-            </article>
-
-            <article class="activities__card">
               <img class="activities__image" src="./images/Mountain Biking.jpg" alt="Mountain Biking">
               <h3 class="activities__name">Mountain Biking</h3>
-              <span class="activities__price">£30 per session</span>
-              <a class="button">More Info</a>
-            </article>
-
-            <article class="activities__card">
-              <img class="activities__image" src="./images/Snorkeling.jpg" alt="Snorkeling">
-              <h3 class="activities__name">Snorkeling</h3>
-              <span class="activities__price">£20 per session</span>
-              <a class="button">More Info</a>
-            </article>
-
-            <article class="activities__card">
-              <img class="activities__image" src="./images/Hiking.jpg" alt="Hiking">
-              <h3 class="activities__name">Hiking</h3>
-              <span class="activities__price">£15 per session</span>
-              <a class="button">More Info</a>
+              <p class="activities__price">£30 <span class="quantity">per session</span></p>
+              <p class="activities__rating">★★★★★</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Scuba Diving.jpg" alt="Scuba Diving">
               <h3 class="activities__name">Scuba Diving</h3>
-              <span class="activities__price">£100 per session</span>
-              <a class="button">More Info</a>
+              <p class="activities__price">£100 <span class="quantity">per session</span></p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Rock Climbing.jpg" alt="Rock Climbing">
               <h3 class="activities__name">Rock Climbing</h3>
-              <span class="activities__price">£40 per session</span>
-              <a class="button">More Info</a>
+              <p class="activities__price">£40 <span class="quantity">per session</span></p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="activities__card">
               <img class="activities__image" src="./images/Kayaking.jpg" alt="Kayaking">
               <h3 class="activities__name">Kayaking</h3>
-              <span class="activities__price">£25 per session</span>
-              <a class="button">More Info</a>
+              <p class="activities__price">£25 <span class="quantity">per session</span></p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
-
-            <article class="activities__card">
-              <img class="activities__image" src="./images/Safari.jpg" alt="Safari">
-              <h3 class="activities__name">Safari</h3>
-              <span class="activities__price">£150 per session</span>
-              <a class="button">More Info</a>
-            </article>
-
 
 
           </div>
@@ -259,97 +268,139 @@
       <section id="packages">
         <div class="container packages">
 
-          <h2 class="packages__title">Packages</h2>
+          <h2 class="packages__title">Discover Your <span>Dream Holiday</span> Packages</h2>
 
           <div class="packages__grid">
 
             <article class="packages__card">
               <img class="packages__card-image" src="./images/mountain-camping.jpg" alt="Mountain Camping">
-              <h2 class="packages__card-duration">5 Days 4 Night Trip</h2>
+              <h3 class="packages__card-duration">5 Days 4 Night Trip</h3>
               <p class="packages__card-description">Experience the thrill of camping in the mountains.</p>
-              <p class="packages__card-price">£100</p>
-              <a class="packages__card-button" href="#">Book Now</a>
+              <p class="packages__card-price">£100 <span class="quantity">per person</span></p>
+
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="packages__card">
               <img class="packages__card-image" src="./images/Beach Huts.jpg" alt="Beach Huts">
-              <h2 class="packages__card-duration">3 Days 2 Night Trip</h2>
+              <h3 class="packages__card-duration">3 Days 2 Night Trip</h3>
               <p class="packages__card-description">Enjoy the sun, sand and sea in a cozy beach hut.</p>
-              <p class="packages__card-price">£150</p>
-              <a class="packages__card-button" href="#">Book Now</a>
+              <p class="packages__card-price">£150 <span class="quantity">per person</span></p>
+
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="packages__card">
               <img class="packages__card-image" src="./images/Luxury Yacht.jpg" alt="Luxury Yacht">
-              <h2 class="packages__card-duration">8 Days 7 Night Trip</h2>
+              <h3 class="packages__card-duration">8 Days 7 Night Trip</h3>
               <p class="packages__card-description">Experience the high life on a luxury yacht.</p>
-              <p class="packages__card-price">£250</p>
-              <a class="packages__card-button" href="#">Book Now</a>
+              <p class="packages__card-price">£250 <span class="quantity">per person</span></p>
+
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="packages__card">
               <img class="packages__card-image" src="./images/Hot Air Balloon.jpg" alt="Hot Air Balloon">
-              <h2 class="packages__card-duration">2 Days 1 Night Trip</h2>
+              <h3 class="packages__card-duration">2 Days 1 Night Trip</h3>
               <p class="packages__card-description">Take in the stunning views from a hot air balloon.</p>
-              <p class="packages__card-price">£100</p>
-              <a class="packages__card-button" href="#">Book Now</a>
+              <p class="packages__card-price">£100 <span class="quantity">per person</span></p>
+
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="packages__card">
               <img class="packages__card-image" src="./images/Glamping.jpg" alt="Glamping">
-              <h2 class="packages__card-duration">3 Days 2 Night Trip</h2>
+              <h3 class="packages__card-duration">3 Days 2 Night Trip</h3>
               <p class="packages__card-description">Experience the comforts of home in the great outdoors.</p>
-              <p class="packages__card-price">£75</p>
-              <a class="packages__card-button" href="#">Book Now</a>
-            </article>
+              <p class="packages__card-price">£75 <span class="quantity">per person</span></p>
 
-            <article class="packages__card">
-              <img class="packages__card-image" src="./images/Safari Camps.jpg" alt="Safari Camps">
-              <h2 class="packages__card-duration">7 Days 6 Night Trip</h2>
-              <p class="packages__card-description">Explore the wilderness with a safari camp.</p>
-              <p class="packages__card-price">£200</p>
-              <a class="packages__card-button" href="#">Book Now</a>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
             <article class="packages__card">
               <img class="packages__card-image" src="./images/Cruise.jpg" alt="Cruise">
-              <h2 class="packages__card-duration">7 Days 6 Night Trip</h2>
+              <h3 class="packages__card-duration">7 Days 6 Night Trip</h3>
               <p class="packages__card-description">Experience the world from the comfort of a cruise ship.</p>
-              <p class="packages__card-price">£150</p>
-              <a class="packages__card-button" href="#">Book Now</a>
+              <p class="packages__card-price">£150 <span class="quantity">per person</span></p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
             </article>
 
           </div>
 
       </section>
 
-      <section id="contact"></section>
-
     </main>
 
-    <footer>
+    <footer id="footer">
       <div class="container footer">
 
-        <div class="footer__head">
-          <span class="footer__title">Holidays 4 You</span>
+        <div class="footer__wrapper">
+
+          <div class="footer__company">
+            <a class="logo" href="#">Logo</a>
+            <p>We are a holiday booking company dedicated to making your dream vacations come true and
+              unforgettable experiences.</p>
+            <p>Call us at <span>123-456-7890</span></p>
+          </div>
+
+
+          <div class="footer__contact">
+            <h3 class="footer__subheader">Contact Us</h3>
+            <ul>
+              <li><a href="mailto:info@holidays4u.com">info@holidays4u.com</a></li>
+              <li><a href="tel:1234567890">123-456-7890</a></li>
+              <li><a href="https://www.google.com/maps/search/123+Main+St,+City,+State+12345">123 Main St, City, State
+                  12345</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__about">
+            <h3 class="footer__subheader">About Us</h3>
+            <ul>
+              <li><a href="#">Learn More</a></li>
+              <li><a href="#">Read Our Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__resources">
+            <h3 class="footer__subheader">Guides</h3>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Booking</a></li>
+              <li><a href="#">Glossary</a></li>
+            </ul>
+          </div>
+
         </div>
 
-        <ul class="footer__links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#locations">Locations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
       </div>
+
+      <div class="footer__wrapper-2">
+        <p>© 2024 Real Estate Company. All rights reserved. </p>
+      </div>
+
     </footer>
 
     <script>
-
-      window.addEventListener('scroll',
-        function () {
-          document.querySelector('nav').classList.toggle('window-scrolled', window.scrollY > 0);
-        });
 
       const nav = document.querySelector('.nav__list');
       const openNavButton = document.querySelector('#nav__toggle-open');

@@ -1,90 +1,84 @@
-@import "./style.scss";
-
-footer {
-    /*Box Model*/
-    margin-top: 10rem;
-
-    /*Color*/
-    background-color: rgba(17, 25, 40);
-
-    @media (width < 600px) {
-        /*Box Model*/
-        margin-top: 4rem;
-    }
+#footer {
+    background-color: var(--color-oxford-blue);
 }
 
 .footer {
-    /*Layout*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        place-items: center;
+        gap: 3rem;
 
-    /*Box Model*/
-    border-top: 0.25rem solid $color-black;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+        padding: 3rem 0;
 
-    /*Color*/
-    //!color: $color-black;
-
-    &__head {
-        /*Layout*/
-        display: flex;
-        align-items: center;
-        //!gap: 2rem;
-
-        /*Box Model*/
-        border-bottom: 0.1rem solid $color-white;
-        padding-bottom: 1.5rem;
-
-        /*Font*/
-        font-weight: 500;
-
-        /*Color*/
-        //!color: $color-black;
-        color: $color-white;
-
-        @media (width < 600px) {
-            /*Layout*/
-            //!flex-direction: column;
-        }
-    }
-    &__links {
-        /*Layout*/
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-
-        /*Box Model*/
-        //!margin-top: 3rem;
-        //!margin-right: 0;
-        //!margin-bottom: 5rem;
-        //!margin-left: 0;
-
-        @media (width < 600px) {
-            /*Layout*/
+        @media (width <= 1350px) {
+            display: flex;
             flex-direction: column;
-            gap: 2rem;
-
-            /*Box Model*/
-            //!margin-top: 5rem;
+            align-items: flex-start;
         }
     }
 
-    &__links > li > a {
-        /*Box Model*/
-        padding: 0.5rem;
+    &__wrapper-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        /*Color*/
-        //!color: $color-black;
-        color: $color-white;
+        padding: 1rem 0;
+
+        background-color: var(--color-white);
+
+        @media (width <= 350px) {
+            display: none;
+        }
+
+        p {
+            color: var(--color-black);
+        }
+    }
+
+    &__company {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        p {
+            color: var(--color-grey);
+        }
+    }
+
+    &__subheader {
+        color: var(--color-white);
+
+        font-weight: 500;
+    }
+
+    a {
+        color: var(--color-grey);
 
         &:hover {
-            /*Box Model*/
-            //!border-bottom: 0.1rem solid $color-white-dark;
-            outline: 0.1rem solid $color-white-dark;
-            border-radius: 0.25rem;
+            color: var(--color-orange);
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    span {
+        color: var(--color-grey);
+
+        &:hover {
+            color: var(--color-orange);
+        }
+    }
+
+    .logo {
+        color: var(--color-orange);
+
+        &:hover {
+            color: var(--color-orange);
         }
     }
 }

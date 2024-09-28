@@ -1,37 +1,20 @@
-@import "./style.scss";
-
-#locations {
-    margin-top: 10rem;
-
-    @media (width < 600px) {
-        margin-top: 4rem;
-    }
-}
-
 .locations {
-    display: grid;
-    place-items: center;
-    color: $color-black;
-
     &__title {
-        text-align: center;
         margin-bottom: 4rem;
-        font-weight: 500;
-        color: hsl(0, 0%, 13%);
     }
 
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         place-items: center;
         gap: var(--gap-card-wrapper-medium);
-        color: $color-black;
 
-        @media (width < 850px) {
+        @media (width < 1350px) {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media (width < 600px) {
+        @media (width < 870px) {
             grid-template-columns: 1fr;
         }
     }
@@ -39,99 +22,32 @@
     &__card {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
 
         position: relative;
 
-        aspect-ratio: 3 / 2;
+        height: 100%;
 
-        border: solid 0.1rem $color-white;
+        border: var(--border);
         border-radius: var(--border-radius);
         padding: var(--padding);
 
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-        &:before {
-            content: "";
-
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-
-            width: 100%;
-            height: 100%;
-
-            border-radius: var(--border-radius);
-
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            filter: brightness(0.8);
-        }
-
-        &:nth-child(1)::before {
-            background-image: url("../images/mountain-camping.jpg");
-        }
-
-        &:nth-child(2)::before {
-            background-image: url("../images/coast.jpg");
-        }
-
-        &:nth-child(3)::before {
-            background-image: url("../images/beach.jpg");
-        }
-
-        &:nth-child(4)::before {
-            background-image: url("../images/seas-bridge.jpg");
-        }
-
-        &:nth-child(5)::before {
-            background-image: url("../images/balcony-pool.jpg");
-        }
-
-        &:nth-child(6)::before {
-            background-image: url("../images/mountain-river.jpg");
-        }
+        background-color: var(--color-white);
 
         &:hover {
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            transition: $transition;
+            box-shadow: var(--box-shadow);
+
+            transition: var(--transition);
         }
     }
 
     &__image {
-        border-radius: 0.25rem;
-        aspect-ratio: 16 / 9;
-    }
+        border-radius: var(--border-radius);
+        margin-bottom: var(--margin-bottom);
 
-    &__name {
-        //font-size: 1.25rem;
-        font-weight: 500;
+        aspect-ratio: 16 / 9;
     }
 
     &__description {
         color: var(--color-grey-dark);
-
-        margin-bottom: var(--margin-bottom);
-    }
-
-    &__button {
-        display: flex;
-        justify-content: center;
-        border-radius: 0.25rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        font-weight: 500;
-        color: $color-white;
-        background-color: rgba(17, 25, 40);
-
-        &:hover {
-            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
-            transition: $transition;
-        }
     }
 }

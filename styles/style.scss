@@ -1,19 +1,3 @@
-$color-grey-blue: #2c2d34;
-$color-grey-blue-light: #3b3c44;
-$color-grey-blue-dark: #1e1f24;
-
-$color-red-orange: #e94822;
-$color-red-orange-light: #f06a46;
-$color-red-orange-dark: #c63c1d;
-
-$color-orange: #f2910a;
-$color-orange-light: #f5a33c;
-$color-orange-dark: #d37e08;
-
-$color-yellow: #efd510;
-$color-yellow-light: #f2dc42;
-$color-yellow-dark: #d6ba0e;
-
 $color-white: #ffffff;
 $color-white-light: #f2f2f2;
 $color-white-dark: #cccccc;
@@ -23,44 +7,29 @@ $color-black: #000000;
 $transition: all 300ms ease;
 
 :root {
-    --color-grey-blue: #2c2d34;
-    --color-grey-blue-light: #3b3c44;
-    --color-grey-blue-dark: #1e1f24;
+    --color-grey: #f2f2f2;
+    --color-grey-dark: #424242;
 
-    --color-grey: #e9e9e9;
-    --color-grey-dark: #7d7d7d;
 
-    --color-red-orange: #e94822;
-    --color-red-orange-light: #f06a46;
-    --color-red-orange-dark: #c63c1d;
-
-    --color-orange: #f2910a;
-    --color-orange-light: #f5a33c;
-    --color-orange-dark: #d37e08;
-
-    --color-yellow: #efd510;
-    --color-yellow-light: #f2dc42;
-    --color-yellow-dark: #d6ba0e;
+    --color-rich-black: #0d1b2aff;
+    --color-oxford-blue: #1b263bff;
+    --color-yinmn-blue: #415a77ff;
+    --color-silver-lake-blue: #778da9ff;
 
     --color-white: #ffffff;
-    --color-white-light: #f2f2f2;
-    --color-white-dark: #cccccc;
-
-    --color-black: #000000;
-    --color-green: #9fce27;
+    --color-orange: #f9a826;
 
     --margin-bottom: 1rem;
-    //--border-cyan: 1px solid var(--bg-cyan);
-    --border: 1px solid var(--color-green);
-    --border-radius: 2rem;
-    --padding: 1rem;
+    --border: 2px solid var(--color-oxford-blue);
+    --border-radius: 0.5rem;
+    --padding: 1.5rem;
     --gap-card-wrapper: 1.5rem;
     --gap-card-wrapper-medium: 3rem;
     --gap-card-wrapper-large: 4.5rem;
 
     --color-white: #fff;
     --color-black: #000;
-    --box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.3);
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 
     --transition: all 0.3s ease-in-out;
 }
@@ -91,6 +60,9 @@ body {
         "header"
         "main"
         "footer";
+
+        color: var(--color-white);
+        background-color: var(--color-white);
 }
 
 nav {
@@ -121,9 +93,15 @@ img {
     display: block;
     object-fit: cover;
 
+    border-radius: var(--border-radius);
+
     width: 100%;
 }
 
 a {
     transition: var(--transition);
+}
+
+span {
+    color: var(--color-orange);
 }
