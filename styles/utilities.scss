@@ -37,6 +37,10 @@
     background-color: var(--color-rich-black);
     background-color: var(--color-orange);
 
+    @media (width < 300px) {
+        width: 100%;
+    }
+
     &:hover {
         transition: var(--transition);
 
@@ -54,6 +58,10 @@
     color: var(--color-oxford-blue);
     background-color: var(--color-white);
 
+    @media (width < 300px) {
+        width: 100%;
+    }
+
     &:hover {
         transition: var(--transition);
 
@@ -67,6 +75,15 @@
     align-self: end;
 
     margin-top: 2rem;
+
+    @media (width < 300px) {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 0.5rem;
+
+        width: 100%;
+    }
 }
 
 .logo {
@@ -76,7 +93,7 @@
     color: var(--color-orange);
 
     @media (width < 600px) {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 }
 

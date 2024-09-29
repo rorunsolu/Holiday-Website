@@ -1,32 +1,8 @@
-@import "./style.scss";
-
-#packages {
-    /*Box Model*/
-    margin-top: 10rem;
-
-    @media (width < 600px) {
-        /*Box Model*/
-        margin-top: 4rem;
-    }
-}
-
 .packages {
-    /*Layout*/
-    display: grid;
-    place-items: center;
-
     &__title {
-        /*Layout*/
         text-align: center;
 
-        /*Box Model*/
         margin-bottom: 4rem;
-
-        /*Font*/
-        font-weight: 500;
-
-        /*Color*/
-        color: hsl(0, 0%, 13%);
     }
 
     &__grid {
@@ -59,6 +35,10 @@
 
         background-color: var(--color-white);
 
+        @media (width < 300px) {
+            padding: var(--padding-small);
+        }
+
         &:hover {
             box-shadow: var(--box-shadow);
 
@@ -74,14 +54,17 @@
     }
 
     &__card-duration {
-
         font-size: 1.25rem;
-  
+
         color: var(--color-oxford-blue);
     }
 
     &__card-description {
         margin-bottom: 0.75rem;
+
+        max-height: 23.9167px;
+
+        overflow-y: hidden;
 
         color: var(--color-grey-dark);
     }
@@ -90,12 +73,6 @@
         margin-bottom: 0.75rem;
 
         font-size: 1.5rem;
-
-        color: var(--color-oxford-blue);
-    }
-
-    i {
-        font-size: 1.25rem;
 
         color: var(--color-oxford-blue);
     }

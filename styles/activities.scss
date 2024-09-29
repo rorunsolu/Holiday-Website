@@ -1,7 +1,4 @@
 .activities {
-    display: grid;
-    place-items: center;
-
     &__title {
         margin-bottom: 4rem;
     }
@@ -37,6 +34,10 @@
 
         background-color: var(--color-white);
 
+        @media (width < 300px) {
+            padding: var(--padding-small);
+        }
+
         &:hover {
             box-shadow: var(--box-shadow);
 
@@ -57,5 +58,11 @@
 
     &__price {
         color: var(--color-grey-dark);
+    }
+
+    &__rating {
+        color: var(--color-orange);
+
+        font-size: 1.25rem;
     }
 }

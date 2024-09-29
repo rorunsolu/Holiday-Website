@@ -33,6 +33,10 @@
 
         background-color: var(--color-white);
 
+        @media (width < 300px) {
+            padding: var(--padding-small);
+        }
+
         &:hover {
             box-shadow: var(--box-shadow);
 
@@ -48,6 +52,11 @@
     }
 
     &__description {
+        min-height: 47.8px;
+        max-height: 47.8px;
+
+        overflow-y: hidden;
+
         color: var(--color-grey-dark);
     }
 }
