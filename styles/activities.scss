@@ -34,7 +34,6 @@
 
         height: 100%;
 
-        border-radius: var(--border-radius);
         padding: var(--padding);
 
         background-color: var(--color-white);
@@ -46,7 +45,6 @@
     }
 
     &__image {
-        border-radius: var(--border-radius);
         margin-bottom: var(--margin-bottom);
 
         aspect-ratio: 16 / 9;

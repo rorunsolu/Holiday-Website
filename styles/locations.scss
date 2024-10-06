@@ -23,24 +23,6 @@
         gap: 2rem;
 
         color: var(--color-white);
-        // display: flex;
-        // flex-direction: column;
-
-        // position: relative;
-
-        // height: 100%;
-
-        // border-radius: var(--border-radius);
-        // padding: var(--padding);
-
-        // background-color: var(--color-white);
-        // box-shadow: var(--shadow);
-
-        // transition: var(--transition);
-
-        // @media (width < 300px) {
-        //     padding: var(--padding-small);
-        // }
 
         @media (width < 630px) {
             grid-template-columns: 1fr;
@@ -65,10 +47,7 @@
 
     &__description {
         min-height: 47.8px;
-        //max-height: 47.8px;
 
         overflow-y: hidden;
-
-        //color: var(--color-grey-dark);
     }
 }

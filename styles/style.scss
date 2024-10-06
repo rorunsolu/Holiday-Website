@@ -14,7 +14,6 @@
 
     --margin-bottom: 1rem;
     --border: 2px solid var(--color-oxford-blue);
-    //--border-radius: 0.5rem;
     --padding: 1.25rem;
     --padding: 1.25rem;
     --padding-small: 0.75rem;
@@ -91,8 +90,6 @@ section {
 img {
     display: block;
     object-fit: cover;
-
-    border-radius: var(--border-radius);
 
     width: 100%;
 }
