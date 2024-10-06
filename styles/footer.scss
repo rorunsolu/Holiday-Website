@@ -1,5 +1,6 @@
 #footer {
-    background-color: var(--color-oxford-blue);
+    //background-color: var(--color-oxford-blue);
+    background-color: var(--bg-grey);
 }
 
 .footer {
@@ -42,7 +43,7 @@
         gap: 0.5rem;
 
         p {
-            color: var(--color-grey);
+            color: var(--color-white-secondary);
         }
     }
 
@@ -53,7 +54,7 @@
     }
 
     a {
-        color: var(--color-grey);
+        color: var(--color-white-secondary);
 
         &:hover {
             color: var(--color-orange);
@@ -67,7 +68,9 @@
     }
 
     span {
-        color: var(--color-grey);
+        color: var(--color-white-secondary);
+
+        transition: var(--transition);
 
         &:hover {
             color: var(--color-orange);
@@ -76,9 +79,5 @@
 
     .logo {
         color: var(--color-orange);
-
-        &:hover {
-            color: var(--color-orange);
-        }
     }
 }

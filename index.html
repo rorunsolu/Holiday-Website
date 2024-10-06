@@ -31,7 +31,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
 
     <!-- Custom SCSS Imports -->
     <script type="module" src="/scripts/main.js"></script>
@@ -43,7 +44,7 @@
     <nav>
       <div class="nav-container nav">
 
-        <a class="logo" href="#">Logo</a>
+        <a class="logo" href="#">Travely</a>
 
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
@@ -69,11 +70,141 @@
         <h1 class="header__title">Explore the <span>Best Destinations</span> for Your Next Adventure</h1>
         <a class="button">Book Now</a>
 
+        <img class="header__image" src="images/hero-bg.jpg" alt="hero image" loading="lazy">
+
       </div>
 
     </header>
 
     <main>
+
+      <section id="activities">
+
+        <div class="container activities">
+
+          <h2 class="activities__title">Thrilling Activities to Make <span>Your Holiday</span> Unforgettable</h2>
+
+          <div class="activities__wrapper">
+
+            <article class="activities__card">
+              <img class="activities__image" src="./images/Mountain Biking.jpg" alt="Mountain Biking">
+              <h3 class="activities__name">Mountain Biking</h3>
+              <p class="activities__price">£30 <span class="quantity">per session</span></p>
+              <p class="activities__rating">★★★★★</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
+            </article>
+
+            <article class="activities__card">
+              <img class="activities__image" src="./images/Scuba Diving.jpg" alt="Scuba Diving">
+              <h3 class="activities__name">Scuba Diving</h3>
+              <p class="activities__price">£100 <span class="quantity">per session</span></p>
+              <p class="activities__rating">★★★★★</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
+            </article>
+
+            <article class="activities__card">
+              <img class="activities__image" src="./images/Rock Climbing.jpg" alt="Rock Climbing">
+              <h3 class="activities__name">Rock Climbing</h3>
+              <p class="activities__price">£40 <span class="quantity">per session</span></p>
+              <p class="activities__rating">★★★★★</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
+            </article>
+
+            <article class="activities__card">
+              <img class="activities__image" src="./images/Kayaking.jpg" alt="Kayaking">
+              <h3 class="activities__name">Kayaking</h3>
+              <p class="activities__price">£25 <span class="quantity">per session</span></p>
+              <p class="activities__rating">★★★★★</p>
+              <div class="button-wrapper">
+                <a class="button" href="#">Book Now</a>
+                <a class="button-secondary" href="#">More Info</a>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="testimonials">
+
+        <div class="container testimonials">
+
+          <h2 class="testimonials__title">What Our Customers Say</h2>
+
+          <div class="testimonials__card-wrapper">
+
+            <article class="testimonials__card">
+
+              <span class="testimonials__rating">★★★★★</span>
+
+              <p class="testimonials__description">Our holiday to Spain was unforgettable! The booking process was
+                seamless, and the
+                hotel exceeded our expectations. Thank you for making it so easy!</p>
+
+              <div class="testimonials__author">
+                <img class="testimonials__author-image" src="./images/person-3.jpg" alt="Customer 1">
+                <div class="testimonials__author-info">
+                  <h3 class="testimonials__author-name">John Doe</h3>
+                  <p class="testimonials__author-location">London, UK</p>
+                </div>
+              </div>
+
+            </article>
+
+
+            <article class="testimonials__card">
+
+              <span class="testimonials__rating">★★★★★</span>
+
+              <p class="testimonials__description">Booking our family holiday was a breeze! The resort recommendations
+                were
+                fantastic, and the whole process was so easy. We had the best time in Greece.</p>
+
+              <div class="testimonials__author">
+                <img class="testimonials__author-image" src="./images/person-5.jpg" alt="Customer 2">
+                <div class="testimonials__author-info">
+                  <h3 class="testimonials__author-name">Emily Smith</h3>
+                  <p class="testimonials__author-location">New York, USA</p>
+                </div>
+              </div>
+
+            </article>
+
+            <article class="testimonials__card">
+
+              <span class="testimonials__rating">★★★★★</span>
+
+              <p class="testimonials__description">I was impressed by the customer service. They helped us find the
+                perfect beach
+                villa in Bali, and everything went smoothly. Highly recommended!</p>
+
+              <div class="testimonials__author">
+                <img class="testimonials__author-image" src="./images/person-6.jpg" alt="Customer 3">
+                <div class="testimonials__author-info">
+                  <h3 class="testimonials__author-name">Alex Johnson</h3>
+                  <p class="testimonials__author-location">Sydney, Australia</p>
+                </div>
+              </div>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </section>
 
       <section id="locations">
         <div class="container locations">
@@ -85,74 +216,30 @@
             <article class="locations__card">
               <img class="locations__image" src="images/paris-img.jpg"
                    alt="A view of Paris, France, featuring iconic landmarks">
-              <h3 class="locations__name">Paris, France</h3>
-              <p class="locations__description">Paris, the capital of France, is known for its art, culture, and
-                wonders.
-              </p>
-              <div class="button-wrapper">
+              <div class="locations__card-text">
+                <h3 class="locations__name">Paris, France</h3>
+                <p class="locations__description">Paris, the capital of France, is known for its art, culture, and
+                  wonders. From the iconic Eiffel Tower to the world-famous Louvre Museum, Paris is a city of romance,
+                  history, and incredible cuisine. Stroll along the Champs-Élysées, enjoy a boat ride on the Seine...
+                  <a class="button-direct" href="#">Read More</a>
+                </p>
                 <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
               </div>
             </article>
 
             <article class="locations__card">
               <img class="locations__image" src="images/tokyo-img.jpg" alt="A bustling street view of Tokyo, Japan">
-              <h3 class="locations__name">Tokyo, Japan</h3>
-              <p class="locations__description">Tokyo, the bustling capital of Japan, offers a mix of traditional and
-                modern attractions.</p>
-              </p>
-              <div class="button-wrapper">
+              <div class="locations__card-text">
+                <h3 class="locations__name">Tokyo, Japan</h3>
+                <p class="locations__description">Tokyo, the bustling capital of Japan, offers a mix of traditional and
+                  modern attractions. From the serene Meiji Shrine to the bustling Shibuya Crossing, Tokyo is a city
+                  that never sleeps. Experience the beauty of cherry blossoms in spring and explore ancient temples...
+                  <a class="button-direct" href="#">Read More</a>
+                </p>
                 <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
               </div>
             </article>
 
-            <article class="locations__card">
-              <img class="locations__image" src="images/newyork-img.jpg" alt="A skyline view of New York City, USA">
-              <h3 class="locations__name">New York City, USA</h3>
-              <p class="locations__description">New York City is known for its vibrant culture, landmarks like the
-                Empire State Building and the Met.</p>
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
-              </div>
-            </article>
-
-            <article class="locations__card">
-              <img class="locations__image" src="images/sydney-img.jpg"
-                   alt="A view of Sydney, Australia, with the Opera House">
-              <h3 class="locations__name">Sydney, Australia</h3>
-              <p class="locations__description">Sydney is famous for its stunning harbour, the Opera House and the
-                Sydney Opera House.</p>
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
-              </div>
-            </article>
-
-            <article class="locations__card">
-              <img class="locations__image" src="images/cape-town-img.jpg"
-                   alt="A scenic view of Cape Town, South Africa, with Table Mountain">
-              <h3 class="locations__name">Cape Town, South Africa</h3>
-              <p class="locations__description">Cape Town is known for its natural beauty, including Table Mountain and
-                the Cape of Good Hope.</p>
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
-              </div>
-            </article>
-
-            <article class="locations__card">
-              <img class="locations__image" src="images/rio-img.jpg"
-                   alt="A view of Rio de Janeiro, Brazil, featuring beaches and Carnival">
-              <h3 class="locations__name">Rio de Janeiro, Brazil</h3>
-              <p class="locations__description">Rio de Janeiro is famous for its beaches, Carnival festival and culture.
-              </p>
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
-              </div>
-            </article>
 
           </div>
 
@@ -214,59 +301,50 @@
 
       </section>
 
-      <section id="activities">
+      <section id="support">
 
-        <div class="container activities">
+        <div class="container support">
 
-          <h2 class="activities__title">Thrilling Activities to Make <span>Your Holiday</span> Unforgettable</h2>
+          <div class="support__text-wrapper">
 
-          <div class="activities__wrapper">
+            <span class="support__subtitle"><i class="ri-heart-line"></i>Here for you</span>
+            <h2 class="support__title">Customer Support</h2>
+            <p class="support__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dolorum
+              aperferendis ipsam saepe consequuntur repellendus.</p>
 
-            <article class="activities__card">
-              <img class="activities__image" src="./images/Mountain Biking.jpg" alt="Mountain Biking">
-              <h3 class="activities__name">Mountain Biking</h3>
-              <p class="activities__price">£30 <span class="quantity">per session</span></p>
-              <p class="activities__rating">★★★★★</p>
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
+            <div class="support__benefits">
+
+              <div class="support__benefit">
+                <div class="support__icon-wrapper">
+                  <i class="ri-customer-service-2-line"></i>
+                </div>
+
+                <p class="support__benefit-text"><span class="support__benefit-name">24/7 Support</span> Lorem ipsum
+                  dolor sit
+                  amet consectetur adipisicing elit. Iusto consequatur at odit delectus sapiente cumque maiores mollitia
+                  ex
+                  qui tempora.<br><a class="button-direct" href="#">Learn More</a></p>
+
               </div>
-            </article>
 
-            <article class="activities__card">
-              <img class="activities__image" src="./images/Scuba Diving.jpg" alt="Scuba Diving">
-              <h3 class="activities__name">Scuba Diving</h3>
-              <p class="activities__price">£100 <span class="quantity">per session</span></p>
-              <p class="activities__rating">★★★★★</p>
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
-              </div>
-            </article>
+              <div class="support__benefit">
+                <div class="support__icon-wrapper">
+                  <i class="ri-customer-service-2-line"></i>
+                </div>
 
-            <article class="activities__card">
-              <img class="activities__image" src="./images/Rock Climbing.jpg" alt="Rock Climbing">
-              <h3 class="activities__name">Rock Climbing</h3>
-              <p class="activities__price">£40 <span class="quantity">per session</span></p>
-              <p class="activities__rating">★★★★★</p>
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
-              </div>
-            </article>
+                <p class="support__benefit-text"><span class="support__benefit-name">24/7 Support</span> Lorem ipsum
+                  dolor sit
+                  amet consectetur adipisicing elit. Iusto consequatur at odit delectus sapiente cumque maiores mollitia
+                  ex
+                  qui tempora.<br><a class="button-direct" href="#">Learn More</a></p>
 
-            <article class="activities__card">
-              <img class="activities__image" src="./images/Kayaking.jpg" alt="Kayaking">
-              <h3 class="activities__name">Kayaking</h3>
-              <p class="activities__price">£25 <span class="quantity">per session</span></p>
-              <p class="activities__rating">★★★★★</p>
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
               </div>
-            </article>
+
+            </div>
 
           </div>
+
+          <img class="support__image" src="./images/support-img.jpg" alt="">
 
         </div>
 
@@ -281,72 +359,31 @@
 
             <article class="packages__card">
               <img class="packages__card-image" src="./images/mountain-camping.jpg" alt="Mountain Camping">
-              <h3 class="packages__card-duration">5 Days 4 Night Trip</h3>
-              <p class="packages__card-description">Experience the thrill of camping in the mountains.</p>
-              <p class="packages__card-price">£100 <span class="quantity">per person</span></p>
-
-              <div class="button-wrapper">
+              <div class="packages__card-text">
+                <h3 class="packages__card-duration">5 Days 4 Night Trip</h3>
+                <p class="packages__card-description">Experience the thrill of camping in the mountains.</p>
+                <p class="packages__card-price">£100 <span class="quantity">per person</span></p>
                 <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
               </div>
             </article>
 
             <article class="packages__card">
               <img class="packages__card-image" src="./images/Beach Huts.jpg" alt="Beach Huts">
-              <h3 class="packages__card-duration">3 Days 2 Night Trip</h3>
-              <p class="packages__card-description">Enjoy the sun, sand and sea in a cozy beach hut.</p>
-              <p class="packages__card-price">£150 <span class="quantity">per person</span></p>
-
-              <div class="button-wrapper">
+              <div class="packages__card-text">
+                <h3 class="packages__card-duration">3 Days 2 Night Trip</h3>
+                <p class="packages__card-description">Enjoy the sun, sand and sea in a cozy beach hut.</p>
+                <p class="packages__card-price">£150 <span class="quantity">per person</span></p>
                 <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
               </div>
             </article>
 
             <article class="packages__card">
               <img class="packages__card-image" src="./images/Luxury Yacht.jpg" alt="Luxury Yacht">
-              <h3 class="packages__card-duration">8 Days 7 Night Trip</h3>
-              <p class="packages__card-description">Experience the high life on a luxury yacht.</p>
-              <p class="packages__card-price">£250 <span class="quantity">per person</span></p>
-
-              <div class="button-wrapper">
+              <div class="packages__card-text">
+                <h3 class="packages__card-duration">8 Days 7 Night Trip</h3>
+                <p class="packages__card-description">Experience the high life on a luxury yacht.</p>
+                <p class="packages__card-price">£250 <span class="quantity">per person</span></p>
                 <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
-              </div>
-            </article>
-
-            <article class="packages__card">
-              <img class="packages__card-image" src="./images/Hot Air Balloon.jpg" alt="Hot Air Balloon">
-              <h3 class="packages__card-duration">2 Days 1 Night Trip</h3>
-              <p class="packages__card-description">Take in the stunning views from a hot air balloon.</p>
-              <p class="packages__card-price">£100 <span class="quantity">per person</span></p>
-
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
-              </div>
-            </article>
-
-            <article class="packages__card">
-              <img class="packages__card-image" src="./images/Glamping.jpg" alt="Glamping">
-              <h3 class="packages__card-duration">3 Days 2 Night Trip</h3>
-              <p class="packages__card-description">Experience the comforts of home in the great outdoors.</p>
-              <p class="packages__card-price">£75 <span class="quantity">per person</span></p>
-
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
-              </div>
-            </article>
-
-            <article class="packages__card">
-              <img class="packages__card-image" src="./images/Cruise.jpg" alt="Cruise">
-              <h3 class="packages__card-duration">7 Days 6 Night Trip</h3>
-              <p class="packages__card-description">Experience the world from the comfort of a cruise ship.</p>
-              <p class="packages__card-price">£150 <span class="quantity">per person</span></p>
-              <div class="button-wrapper">
-                <a class="button" href="#">Book Now</a>
-                <a class="button-secondary" href="#">More Info</a>
               </div>
             </article>
 
@@ -362,7 +399,7 @@
         <div class="footer__wrapper">
 
           <div class="footer__company">
-            <a class="logo" href="#">Logo</a>
+            <a class="logo" href="#">Travely</a>
             <p>We are a holiday booking company dedicated to making your dream vacations come true and
               unforgettable experiences.</p>
             <p>Call us at <span>123-456-7890</span></p>

@@ -5,58 +5,70 @@
 
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+
         gap: var(--gap-card-wrapper-medium);
 
         @media (width < 1350px) {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
         }
 
-        @media (width < 870px) {
-            grid-template-columns: 1fr;
+        @media (width < 630px) {
         }
     }
 
     &__card {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 4fr 5fr;
+        gap: 2rem;
 
-        position: relative;
+        color: var(--color-white);
+        // display: flex;
+        // flex-direction: column;
 
-        height: 100%;
+        // position: relative;
 
-        border: var(--border);
-        border-radius: var(--border-radius);
-        padding: var(--padding);
+        // height: 100%;
 
-        background-color: var(--color-white);
+        // border-radius: var(--border-radius);
+        // padding: var(--padding);
 
-        @media (width < 300px) {
-            padding: var(--padding-small);
-        }
+        // background-color: var(--color-white);
+        // box-shadow: var(--shadow);
 
-        &:hover {
-            box-shadow: var(--box-shadow);
+        // transition: var(--transition);
 
-            transition: var(--transition);
+        // @media (width < 300px) {
+        //     padding: var(--padding-small);
+        // }
+
+        @media (width < 630px) {
+            grid-template-columns: 1fr;
         }
     }
 
-    &__image {
-        border-radius: var(--border-radius);
-        margin-bottom: var(--margin-bottom);
+    &__card-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-        aspect-ratio: 16 / 9;
+    &__name {
+        color: var(--color-white);
+    }
+
+    &__image {
+        aspect-ratio: 2 / 3;
+
+        max-height: 500px;
     }
 
     &__description {
         min-height: 47.8px;
-        max-height: 47.8px;
+        //max-height: 47.8px;
 
         overflow-y: hidden;
 
-        color: var(--color-grey-dark);
+        //color: var(--color-grey-dark);
     }
 }

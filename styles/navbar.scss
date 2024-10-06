@@ -10,7 +10,7 @@ nav {
     height: 5rem;
     width: 100vw;
 
-    background-color: var(--color-white);
+    background-color: var(--bg-grey);
 
     @media (width < 600px) {
         height: 3.75rem;
@@ -36,7 +36,7 @@ nav {
         border-radius: var(--border-radius);
         padding: 0.75rem 1.25rem;
 
-        background-color: var(--color-orange);
+        //background-color: var(--color-orange);
 
         @media (width < 1000px) {
             display: none;
@@ -63,13 +63,16 @@ nav {
     }
 
     &__link {
+        position: relative;
+
         border-radius: var(--border-radius);
         padding: 0.5rem 0.75rem;
 
         font-size: 1rem;
         font-weight: 500;
 
-        color: var(--color-white);
+        //color: var(--color-white);
+        color: var(--color-white-secondary);
 
         @media (width < 1000px) {
             display: flex;
@@ -80,10 +83,30 @@ nav {
             padding: 1rem 5rem;
         }
 
-        &:hover {
+        &::after {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            width: 0;
+            height: 2px;
+
             background-color: var(--color-white);
-            color: var(--color-orange);
+
+            transition: width var(--transition);
         }
+
+        &:hover {
+            color: var(--color-white);
+            
+            &::after {
+                width: 100%;
+            }
+        }
+
+
     }
 
     .button {

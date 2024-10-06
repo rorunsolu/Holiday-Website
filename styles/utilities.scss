@@ -2,7 +2,7 @@
     width: 90%;
 
     margin: 0 auto;
-    max-width: 2000px;
+    max-width: 1750px;
 
     position: relative;
 
@@ -24,6 +24,21 @@
     }
 }
 
+.button-wrapper {
+    align-self: end;
+
+    margin-top: 2rem;
+
+    @media (width < 350px) {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 0.5rem;
+
+        width: 100%;
+    }
+}
+
 .button {
     border: 2px solid transparent;
     border-radius: var(--border-radius);
@@ -37,13 +52,13 @@
     background-color: var(--color-rich-black);
     background-color: var(--color-orange);
 
-    @media (width < 300px) {
+    transition: var(--transition);
+
+    @media (width < 350px) {
         width: 100%;
     }
 
     &:hover {
-        transition: var(--transition);
-
         border: var(--border);
     }
 }
@@ -53,36 +68,35 @@
     border-radius: var(--border-radius);
     padding: 0.75rem 1.25rem;
 
+    width: fit-content;
+
     font-weight: 500;
 
     color: var(--color-oxford-blue);
     background-color: var(--color-white);
 
-    @media (width < 300px) {
+    transition: var(--transition);
+
+    @media (width < 350px) {
         width: 100%;
     }
 
     &:hover {
-        transition: var(--transition);
-
         border: 2px solid var(--color-oxford-blue);
 
         color: var(--color-rich-black);
     }
 }
 
-.button-wrapper {
-    align-self: end;
+.button-direct {
+    color: var(--color-orange);
 
-    margin-top: 2rem;
+    transition: var(--transition);
 
-    @media (width < 300px) {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        gap: 0.5rem;
+    &:hover {
+        text-decoration: underline;
 
-        width: 100%;
+        color: var(--color-orange);
     }
 }
 

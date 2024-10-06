@@ -1,6 +1,7 @@
 :root {
-    --color-grey: #f2f2f2;
+    --color-grey: hsl(0, 0%, 75%);
     --color-grey-dark: #424242;
+    --bg-grey: #181819;
 
     --color-rich-black: #0d1b2aff;
     --color-oxford-blue: #1b263bff;
@@ -8,11 +9,13 @@
     --color-silver-lake-blue: #778da9ff;
 
     --color-white: #ffffff;
+    --color-white-secondary: hsl(0, 0%, 90%);
     --color-orange: #f9a826;
 
     --margin-bottom: 1rem;
     --border: 2px solid var(--color-oxford-blue);
-    --border-radius: 0.5rem;
+    //--border-radius: 0.5rem;
+    --padding: 1.25rem;
     --padding: 1.25rem;
     --padding-small: 0.75rem;
     --gap-card-wrapper: 1.5rem;
@@ -22,6 +25,8 @@
     --color-white: #fff;
     --color-black: #000;
     --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
 
     --transition: all 0.3s ease-in-out;
 }
@@ -41,11 +46,6 @@ html {
 }
 
 body {
-    font-family: "Basic", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.6;
-
     display: grid;
     grid-template-areas:
         "nav"
@@ -55,14 +55,23 @@ body {
 
     color: var(--color-white);
     background-color: var(--color-white);
+    background-color: #0f1014;
 }
 
 nav {
     grid-area: nav;
+
+    margin-bottom: 2rem;
 }
 
 header {
     grid-area: header;
+
+    padding: 10rem 0;
+
+    @media (width < 800px) {
+        padding: 5rem 0;
+    }
 }
 
 main {
@@ -91,9 +100,11 @@ img {
 }
 
 a {
-    transition: var(--transition);
-}
+    position: relative;
 
-span {
-    color: var(--color-orange);
+    transition: var(--transition);
+
+    &:hover {
+        color: var(--color-white);
+    }
 }

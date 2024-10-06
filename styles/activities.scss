@@ -1,4 +1,10 @@
+#activities {
+    background-color: var(--bg-grey);
+}
+
+
 .activities {
+    
     &__title {
         margin-bottom: 4rem;
     }
@@ -28,20 +34,14 @@
 
         height: 100%;
 
-        border: var(--border);
         border-radius: var(--border-radius);
         padding: var(--padding);
 
         background-color: var(--color-white);
+        box-shadow: var(--shadow);
 
         @media (width < 300px) {
             padding: var(--padding-small);
-        }
-
-        &:hover {
-            box-shadow: var(--box-shadow);
-
-            transition: var(--transition);
         }
     }
 
