@@ -26,6 +26,10 @@ nav {
 
     height: 100%;
 
+            @media (width < 1000px) {
+                padding: 0 1rem;
+        }
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -35,8 +39,6 @@ nav {
 
         border-radius: var(--border-radius);
         padding: 0.75rem 1.25rem;
-
-        //background-color: var(--color-orange);
 
         @media (width < 1000px) {
             display: none;
@@ -56,7 +58,6 @@ nav {
     &__item {
         @media (width < 1000px) {
             border-radius: 0;
-            padding: 0;
 
             height: 5rem;
         }
@@ -71,8 +72,7 @@ nav {
         font-size: 1rem;
         font-weight: 500;
 
-        //color: var(--color-white);
-        color: var(--color-white-secondary);
+        color: var(--color-white);
 
         @media (width < 1000px) {
             display: flex;
@@ -83,30 +83,14 @@ nav {
             padding: 1rem 5rem;
         }
 
-        &::after {
-            content: "";
-
-            position: absolute;
-            left: 0;
-            bottom: 0;
-
-            width: 0;
-            height: 2px;
-
-            background-color: var(--color-white);
-
-            transition: width var(--transition);
-        }
-
         &:hover {
-            color: var(--color-white);
-            
-            &::after {
-                width: 100%;
+            text-decoration: solid underline;
+
+            @media (width < 1000px) {
+                text-decoration: none;
+                background-color: var(--bg-grey);
             }
         }
-
-
     }
 
     .button {
@@ -134,11 +118,19 @@ nav {
 
 #nav__toggle-open {
     color: var(--color-orange);
+
+    &:hover {
+        color: var(--color-white);
+    }
 }
 
 #nav__toggle-close {
     color: var(--color-orange);
     @media (width < 1000px) {
         display: none;
+    }
+
+    &:hover {
+        color: var(--color-white);
     }
 }

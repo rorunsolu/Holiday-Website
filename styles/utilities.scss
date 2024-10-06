@@ -109,6 +109,10 @@
     @media (width < 600px) {
         font-size: 1.75rem;
     }
+
+    @media (width < 400px) {
+        font-size: 1.5rem;
+    }
 }
 
 .quantity {

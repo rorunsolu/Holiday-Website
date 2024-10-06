@@ -31,7 +31,11 @@ h2 {
     }
 
     @media (width < 400px) {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+    }
+
+    @media (width < 300px) {
+        font-size: 2rem;
     }
 }
 

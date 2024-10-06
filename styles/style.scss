@@ -60,8 +60,6 @@ body {
 
 nav {
     grid-area: nav;
-
-    margin-bottom: 2rem;
 }
 
 header {
@@ -70,7 +68,7 @@ header {
     padding: 10rem 0;
 
     @media (width < 800px) {
-        padding: 5rem 0;
+        padding: 3rem 0;
     }
 }
 
@@ -107,4 +105,8 @@ a {
     &:hover {
         color: var(--color-white);
     }
+}
+
+button {
+    transition: var(--transition);
 }
