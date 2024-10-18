@@ -18,6 +18,9 @@
         font-weight: 500;
         line-height: 1.25rem;
 
+        background-color: var(--bg-grey);
+        color: var(--color-white);
+
         &::after {
             content: "\002B";
 
@@ -38,6 +41,9 @@
         max-height: 0;
 
         transition: max-height 0.2s ease-out;
+
+        background-color: var(--bg-grey);
+        color: var(--color-white);
     }
 
     &__content {
