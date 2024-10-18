@@ -9,6 +9,6 @@ import '/styles/about.scss';
 import '/styles/activities.scss';
 import '/styles/support.scss';
 import '/styles/testimonials.scss';
-import '/styles/packages.scss';
 import '/styles/accordion.scss';
+import '/styles/conversion.scss';
 import '/styles/footer.scss';
