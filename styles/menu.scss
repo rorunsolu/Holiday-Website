@@ -6,16 +6,12 @@
     width: 90%;
     height: 100%;
 
-    border-radius: 0 var(--border-radius) var(--border-radius) 0;
-
     position: fixed;
     top: 0;
     right: 0;
     z-index: 999;
 
-    background-color: var(--bg-frosted-white-secondary);
-    -webkit-backdrop-filter: var(--bg-blur);
-    backdrop-filter: var(--bg-blur);
+    background-color: var(--bg-grey);
 
     ul {
         width: 100%;
@@ -57,7 +53,7 @@
         color: var(--color-white);
 
         &:hover {
-            background-color: var(--bg-frosted-white-secondary);
+            background-color: var(--color-orange);
         }
     }
 }
@@ -72,8 +68,6 @@
 
 .close-menu-btn {
     margin-right: 1rem;
-
-    background-color: var(--bg-frosted-white-secondary);
 }
 
 .menu-overlay {

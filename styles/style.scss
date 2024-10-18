@@ -53,6 +53,7 @@ nav {
     display: grid;
     place-items: center;
 
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -76,14 +77,6 @@ header {
     }
 }
 
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-
 section {
     padding: 10rem 0;
 
@@ -92,16 +85,36 @@ section {
     }
 }
 
+button {
+    width: 3rem;
+    height: 3rem;
+
+    cursor: pointer;
+
+    font-size: 2rem;
+
+    color: var(--color-white);
+    background: transparent;
+
+    i {
+        border-radius: var(--border-radius);
+        padding: 0.5rem;
+
+        &:hover {
+            color: var(--color-orange);
+        }
+    }
+}
+
 img {
     display: block;
     object-fit: cover;
 
     width: 100%;
+    height: auto;
 }
 
 a {
-    position: relative;
-
     transition: var(--transition);
 
     &:hover {
