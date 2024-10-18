@@ -45,25 +45,30 @@ html {
 }
 
 body {
-    display: grid;
-    grid-template-areas:
-        "nav"
-        "header"
-        "main"
-        "footer";
-
     color: var(--color-white);
-    background-color: var(--color-white);
     background-color: #0f1014;
 }
 
 nav {
-    grid-area: nav;
+    display: grid;
+    place-items: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    height: 5rem;
+    width: 100vw;
+
+    background-color: var(--bg-grey);
+
+    @media (width < 600px) {
+        height: 3.75rem;
+    }
 }
 
 header {
-    grid-area: header;
-
     padding: 10rem 0;
 
     @media (width < 800px) {
@@ -106,4 +111,9 @@ a {
 
 button {
     transition: var(--transition);
+}
+
+svg {
+    width: 1.25rem;
+    height: 1.25rem;
 }
