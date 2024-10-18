@@ -1,5 +1,5 @@
 #activities {
-    background-color: var(--bg-grey);
+    //background-color: var(--bg-grey);
 }
 
 .activities {
@@ -26,6 +26,7 @@
         padding: var(--padding);
 
         background-color: var(--color-white);
+        background-color: var(--bg-grey);
         box-shadow: var(--shadow);
 
         @media (width < 300px) {
@@ -39,12 +40,16 @@
         aspect-ratio: 16 / 9;
     }
 
+    &__name {
+        color: var(--color-white);
+    }
+
     &__rating {
         color: var(--color-yellow);
     }
 
     &__price {
-        color: var(--color-grey-dark);
+        color: var(--color-white);
     }
 
     &__rating {
