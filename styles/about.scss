@@ -7,17 +7,16 @@
 .about {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    gap: 4rem;
 
     &__description {
+        margin-bottom: 4rem;
+
         color: var(--color-grey);
     }
 
     &__information {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        place-items: center;
         gap: var(--gap-card-wrapper);
 
         @media (width < 1350px) {
@@ -40,22 +39,15 @@
         height: 100%;
 
         padding: var(--padding);
+
+        svg {
+            width: 4rem;
+            height: 4rem;
+
+            color: var(--color-orange);
+        }
     }
-
-    &__icon-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    &__perk-icon {
-        overflow: hidden;
-        text-align: center;
-
-        font-size: 3.5rem;
-        color: var(--color-orange);
-    }
-
+    
     &__perk-name {
         color: var(--color-white);
     }

@@ -10,4 +10,5 @@ import '/styles/activities.scss';
 import '/styles/support.scss';
 import '/styles/testimonials.scss';
 import '/styles/packages.scss';
+import '/styles/accordion.scss';
 import '/styles/footer.scss';
