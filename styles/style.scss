@@ -1,16 +1,17 @@
 :root {
     --color-grey: hsl(0, 0%, 75%);
-    --color-grey-dark: #424242;
-    --bg-grey: #181819;
+    --color-grey-dark: hsl(0, 0%, 26%);
+    --bg-grey: hsl(240, 3%, 10%);
+    --color-bg: hsl(222, 11%, 7%);
 
-    --color-rich-black: #0d1b2aff;
-    --color-oxford-blue: #1b263bff;
-    --color-yinmn-blue: #415a77ff;
-    --color-silver-lake-blue: #778da9ff;
+    --color-rich-black: hsl(213, 42%, 10%);
+    --color-oxford-blue: hsl(216, 36%, 17%);
+    --color-yinmn-blue: hsl(213, 28%, 36%);
+    --color-silver-lake-blue: hsl(211, 19%, 57%);
 
-    --color-white: #ffffff;
+    --color-white: hsl(0, 0%, 100%);
     --color-white-secondary: hsl(0, 0%, 90%);
-    --color-orange: #f9a826;
+    --color-orange: hsl(42, 94%, 57%);
 
     --margin-bottom: 1rem;
     --padding: 1.25rem;
@@ -48,7 +49,7 @@ html {
 
 body {
     color: var(--color-white);
-    background-color: #0f1014;
+    background-color: var(--color-bg);
 }
 
 nav {
