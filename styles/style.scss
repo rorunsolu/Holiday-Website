@@ -1,32 +1,21 @@
 :root {
-    --color-grey: hsl(0, 0%, 75%);
-    --color-grey-dark: hsl(0, 0%, 26%);
-    --bg-grey: hsl(240, 3%, 10%);
-    --color-bg: hsl(222, 11%, 7%);
-
-    --color-rich-black: hsl(213, 42%, 10%);
-    --color-oxford-blue: hsl(216, 36%, 17%);
-    --color-yinmn-blue: hsl(213, 28%, 36%);
-    --color-silver-lake-blue: hsl(211, 19%, 57%);
-
     --color-white: hsl(0, 0%, 100%);
-    --color-white-secondary: hsl(0, 0%, 90%);
-    --color-orange: hsl(42, 94%, 57%);
+    --color-white-dark: hsl(0, 0%, 85%);
 
-    --margin-bottom: 1rem;
-    --padding: 1.25rem;
-    --padding: 1.25rem;
-    --padding-small: 0.75rem;
-    --gap-card-wrapper: 1.5rem;
-    --gap-card-wrapper-medium: 3rem;
-    --gap-card-wrapper-large: 4.5rem;
-
-    --color-white: hsl(0, 0%, 100%);
     --color-black: hsl(0, 0%, 0%);
 
-    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --color-grey: hsl(0, 0%, 75%);
 
-    --transition: all 0.3s ease-in-out;
+    --color-orange: hsl(42, 88%, 54%);
+    --color-orange-dark: hsl(42, 88%, 44%);
+
+    --color-bg-card: hsl(240, 3%, 10%);
+    --color-bg-body: hsl(222, 11%, 7%);
+
+    --padding: 1.25rem;
+    --padding-small: 0.75rem;
+
+    --transition: all 0.25s ease-in-out;
 }
 
 * {
@@ -37,6 +26,11 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 }
 
 html {
@@ -47,35 +41,17 @@ html {
 }
 
 body {
+    min-height: 100vh;
+
     color: var(--color-white);
-    background-color: var(--color-bg);
-}
-
-nav {
-    display: grid;
-    place-items: center;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-
-    height: 5rem;
-    width: 100vw;
-
-    background-color: var(--bg-grey);
-
-    @media (width < 600px) {
-        height: 3.75rem;
-    }
+    background-color: var(--color-bg-body);
 }
 
 header {
     padding: 10rem 0;
 
-    @media (width < 800px) {
-        padding: 3rem 0;
+    @media (width < 600px) {
+        padding: 7rem 0;
     }
 }
 
@@ -98,6 +74,8 @@ button {
     color: var(--color-white);
     background: transparent;
 
+    transition: var(--transition);
+
     i {
         border-radius: var(--border-radius);
         padding: 0.5rem;
@@ -117,14 +95,6 @@ img {
 }
 
 a {
-    transition: var(--transition);
-
-    &:hover {
-        color: var(--color-white);
-    }
-}
-
-button {
     transition: var(--transition);
 }
 

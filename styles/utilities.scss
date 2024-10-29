@@ -11,15 +11,8 @@
     }
 }
 
-.nav-container {
-    width: 95%;
-
-    margin: 0 auto;
-    max-width: 1800px;
-
-    position: relative;
-
-    @media (width <= 1000px) {
+.width-100 {
+    @media (width < 1300px) {
         width: 100%;
     }
 }
@@ -32,9 +25,8 @@
     margin-top: 2rem;
 
     @media (width < 375px) {
-        display: flex;
         flex-direction: column;
-        align-self: center;
+        align-self: flex-start;
         gap: 0.5rem;
 
         width: 100%;
@@ -52,50 +44,31 @@
 
     font-weight: 500;
 
-    color: var(--color-white);
-    background-color: var(--color-orange);
-
-    transition: var(--transition);
-
     @media (width < 375px) {
         width: 100%;
     }
 
-    &:hover {
-        
-    }
-}
+    &--main {
+        color: var(--color-white);
+        background-color: var(--color-orange);
 
-.button-secondary {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    padding: 0.75rem 1.25rem;
-
-    width: fit-content;
-
-    font-weight: 500;
-
-    color: var(--color-oxford-blue);
-    background-color: var(--color-white);
-
-    transition: var(--transition);
-
-    @media (width < 375px) {
-        width: 100%;
+        &:hover {
+            background-color: var(--color-orange-dark);
+        }
     }
 
-    &:hover {
+    &--secondary {
+        color: var(--color-black);
+        background-color: var(--color-white);
 
-        color: var(--color-rich-black);
+        &:hover {
+            background-color: var(--color-white-dark);
+        }
     }
 }
 
 .button-direct {
     color: var(--color-orange);
-
-    transition: var(--transition);
 
     &:hover {
         text-decoration: underline;

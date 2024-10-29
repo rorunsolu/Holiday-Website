@@ -4,23 +4,17 @@
     justify-content: center;
     gap: 2rem;
 
-    @media (width < 980px) {
+    @media (width < 1300px) {
         flex-direction: column;
     }
 
     &__title {
         margin-bottom: 2rem;
-
-        color: var(--color-white);
     }
 
     &__image {
-        @media (width < 800px) {
-            aspect-ratio: 1 / 1;
-        }
-    }
+        aspect-ratio: 1 / 1;
 
-    a {
-        display: none;
+        max-height: 30rem;
     }
 }

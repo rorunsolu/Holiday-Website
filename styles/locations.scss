@@ -7,7 +7,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
-        gap: var(--gap-card-wrapper-medium);
+        gap: 3rem;
 
         @media (width < 1350px) {
             grid-template-columns: 1fr;

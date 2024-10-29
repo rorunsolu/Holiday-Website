@@ -7,9 +7,7 @@
     }
 
     &__text-wrapper {
-        padding-right: 7rem;
-        padding-bottom: 4rem;
-        padding-left: 2rem;
+        padding: 0 7rem 4rem 2rem;
 
         @media (width < 500px) {
             margin-bottom: 2rem;
@@ -17,15 +15,8 @@
         }
     }
 
-    &__title {
-        text-align: start;
-        margin-bottom: 1rem;
-    }
-
     &__subtitle {
         text-transform: uppercase;
-
-        font-size: 1.25rem;
 
         i {
             margin-right: 0.5rem;

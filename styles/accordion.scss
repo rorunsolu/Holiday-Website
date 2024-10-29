@@ -18,7 +18,7 @@
         font-weight: 500;
         line-height: 1.25rem;
 
-        background-color: var(--bg-grey);
+        background-color: var(--color-bg-card);
         color: var(--color-white);
 
         &::after {
@@ -42,7 +42,7 @@
 
         transition: max-height 0.2s ease-out;
 
-        background-color: var(--bg-grey);
+        background-color: var(--color-bg-card);
         color: var(--color-white);
     }
 
