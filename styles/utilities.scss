@@ -46,7 +46,6 @@
     align-items: center;
     gap: 0.5rem;
 
-    border: 2px solid transparent;
     padding: 0.75rem 1.25rem;
 
     width: fit-content;
@@ -63,7 +62,7 @@
     }
 
     &:hover {
-        border: var(--border);
+        
     }
 }
 
@@ -72,7 +71,6 @@
     align-items: center;
     gap: 0.5rem;
 
-    border: 2px solid var(--color-orange);
     padding: 0.75rem 1.25rem;
 
     width: fit-content;
@@ -89,7 +87,6 @@
     }
 
     &:hover {
-        border: 2px solid var(--color-oxford-blue);
 
         color: var(--color-rich-black);
     }
