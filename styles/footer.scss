@@ -1,10 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 #footer {
     background-color: var(--color-bg-card);
 }
 
 .footer {
     &__wrapper {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1.5fr 3rem 1fr 3rem 1fr 3rem 1fr;
         grid-template-columns: 1.5fr 1fr 1fr 1fr;
         place-items: center;
         gap: 3rem;
@@ -12,16 +21,29 @@
         padding: 3rem 0;
 
         @media (width <= 1350px) {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
         }
     }
 
     &__wrapper-2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         padding: 1rem 0;
 
@@ -37,8 +59,13 @@
     }
 
     &__company {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 0.5rem;
 
         p {
@@ -61,8 +88,13 @@
     }
 
     ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 0.5rem;
     }
 

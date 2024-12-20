@@ -5,7 +5,12 @@
 }
 
 .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 
     &__description {
@@ -15,7 +20,9 @@
     }
 
     &__information {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 1.75rem 1fr 1.75rem 1fr 1.75rem 1fr;
         grid-template-columns: repeat(4, 1fr);
         gap: 1.75rem;
 
@@ -33,7 +40,12 @@
     }
 
     &__perk {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
 
         height: 100%;
@@ -47,7 +59,7 @@
             color: var(--color-orange);
         }
     }
-    
+
     &__perk-name {
         color: var(--color-white);
     }

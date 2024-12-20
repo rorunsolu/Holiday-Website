@@ -25,11 +25,13 @@
     outline: 0;
     list-style: none;
     text-decoration: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 
     *::before,
     *::after {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
 }
 
@@ -74,6 +76,10 @@ button {
     color: var(--color-white);
     background: transparent;
 
+    -webkit-transition: var(--transition);
+
+    -o-transition: var(--transition);
+
     transition: var(--transition);
 
     i {
@@ -88,13 +94,16 @@ button {
 
 img {
     display: block;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 
     width: 100%;
     height: auto;
 }
 
 a {
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
     transition: var(--transition);
 }
 

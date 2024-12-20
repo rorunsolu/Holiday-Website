@@ -9,15 +9,23 @@ nav {
 }
 
 .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     @media (width < 1300px) {
         padding: 0 2rem;
     }
 
     &__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         @media (width < 1000px) {
             display: none;
@@ -51,6 +59,10 @@ nav {
 
     &__dropdown {
         display: none;
+
+        width: -webkit-fit-content;
+
+        width: -moz-fit-content;
 
         width: fit-content;
 
